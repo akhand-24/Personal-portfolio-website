@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./components/navbar/Navbar";
-import About from "./components/about/About"
+import About from "./components/About/About"
 import Skill from "./components/skill/Skill";
 import Experience from "./components/experience/Experience";
 import Work from "./components/work/Work";
