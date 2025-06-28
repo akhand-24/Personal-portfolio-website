@@ -12,17 +12,17 @@ function Experience() {
           A collection of my work experience and the roles I have taken in
           various organizations
         </p>
-        <div className="relative p-10 mx-40">
-          <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gray-400 h-full" />
+        <div className="relative lg:p-10 lg:mx-40">
+          <div className=" absolute md:inline hidden left-1/2 transform -translate-x-1/2 w-1 bg-gray-400 h-full" />
           {experiences.map((exp) => (
             <div
-              className={`  grid grid-cols-2 gap-15 mt-8
+              className={`  grid lg:grid-cols-2 grid-cols-1 lg:gap-15 md:gap-7 mt-8
                  `}
             >
               <div className={`${ exp.id%2==0 ? "col-start-1 col-end-2":"col-start-2 col-end-3" }  p-5 border-2 border-gray-400 rounded-3xl bg-gray-900 duration-300 hover:scale-105 `}   >
                 <div className='flex '>
 
-                <img className="w-20 rounded-3xl " src={exp.img} alt="" />
+                <img className="md:w-20 w-10 h-auto  rounded-3xl " src={exp.img} alt="" />
                 <div className='ml-7 text-left' >
 
                 <h2 className="text-3xl text-white font-bold font-sans">

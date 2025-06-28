@@ -13,10 +13,10 @@ function Skill() {
           A collection of my technical skills and expertise honed through
           various projects and experiences
         </p>
-        <div className="grid grid-cols-2 p-10 gap-10 mx-50">
+        <div className="grid lg:grid-cols-2 grid-cols-1 p-10 gap-10 lg:mx-50">
           <div className="border-2 bg-gray-900 border-gray-400 rounded-4xl p-5">
             <h2 className="text-gray-500 text-2xl font-bold">FRONTEND</h2>
-            <div className="grid grid-cols-3 gap-4 p-4">
+            <div className="md:grid md:grid-cols-3 flex flex-wrap gap-4 p-4">
               {SkillsInfo[0].skills.map((skill) => (
                 <Tilt
                   key={skill.name}
@@ -34,7 +34,7 @@ function Skill() {
                     <img
                       src={skill.logo}
                       alt={skill.name}
-                      className="w-6 m-2 "
+                      className="w-6 h-auto object-contain aspect-square m-2 "
                     />
                     <p className="text-gray-300 mt-2">{skill.name}</p>
                   </div>
@@ -44,7 +44,7 @@ function Skill() {
           </div>
           <div className="border-2 bg-gray-900 border-gray-400 rounded-4xl p-5">
             <h2 className="text-gray-500 text-2xl font-bold">BACKEND</h2>
-            <div className="grid grid-cols-3 gap-4 p-4">
+            <div className="grid md:grid-cols-3 gap-4 p-4 grid-cols-2">
               {SkillsInfo[1].skills.map((skill) => (
                 <Tilt
                   key={skill.name}
@@ -69,7 +69,7 @@ function Skill() {
           </div>
           <div className="border-2 bg-gray-900 border-gray-400 rounded-4xl p-5">
             <h2 className="text-gray-500 text-2xl font-bold">LANGUAGES</h2>
-            <div className="grid grid-cols-3 gap-4 p-4">
+            <div className="md:grid md:grid-cols-3 flex flex-wrap gap-4 p-4">
               {SkillsInfo[2].skills.map((skill) => (
                 <Tilt
                   key={skill.name}
@@ -94,7 +94,7 @@ function Skill() {
           </div>
           <div className="border-2 bg-gray-900 border-gray-400 rounded-4xl p-5">
             <h2 className="text-gray-500 text-2xl font-bold">TOOLS</h2>
-            <div className="grid grid-cols-3 gap-4 p-4">
+            <div className="md:grid md:grid-cols-3 flex flex-wrap gap-4 p-4">
               {SkillsInfo[3].skills.map((skill) => (
                 <Tilt
                   key={skill.name}
@@ -105,13 +105,13 @@ function Skill() {
                   transitionSpeed={1000}
                   gyroscope={true}
                 >
-                  <div className="flex border-2 border-gray-500 rounded-4xl p-1 cursor-pointer ">
+                  <div className="flex border-2 border-gray-500 rounded-4xl p-1 cursor-pointer  ">
                     <img
                       src={skill.logo}
                       alt={skill.name}
                       className="w-6 m-2 "
                     />
-                    <p className="text-gray-300 mt-2">{skill.name}</p>
+                    <p className="text-gray-300 mt-2 ">{skill.name}</p>
                   </div>
                 </Tilt>
               ))}

@@ -31,10 +31,14 @@ import netlifyLogo from "./assets/tech_logo/netlify.png";
 import vercelLogo from "./assets/tech_logo/vercel.png";
 import postgreLogo from "./assets/tech_logo/postgre.png";
 import csharpLogo from "./assets/tech_logo/csharp.png";
+import bitm from "./assets/education-logo/Birla.png"
+import mother from "./assets/education-logo/MTMHSSK.png"
 
 import dc from "./assets/company-logo/180dc.jpeg"
 import iet from "./assets/company-logo/ietbitmesra.png"
+import Education from "./components/education/Education";
 
+export default gitLogo
 export const SkillsInfo = [
   {
     title: "Frontend",
@@ -120,3 +124,48 @@ export const experiences = [
         "Graphics Designing", 
       ],
     }]
+
+    export const projects=[
+      {
+        id:"0",
+        title:"VidTube",
+        description:"backend-only clone of YouTube's core features using Node.js and Express, supporting user registration, authentication and secure access to video-related APIs",
+        tags:["NodeJS","Express","MongoDB","Cloudinary","Multer"],
+        github:"https://github.com/akhand-24/VidTube-Project",
+
+      },
+      {
+        id:"1",
+        title:"VidTube",
+        description:"backend-only clone of YouTube's core features using Node.js and Express, supporting user registration, authentication and secure access to video-related APIs",
+        tags:["NodeJS","Express","MongoDB","Cloudinary","Multer"],
+        github:"https://github.com/akhand-24/VidTube-Project",
+      },
+      {  id:"0",
+        title:"VidTube",
+        description:"backend-only clone of YouTube's core features using Node.js and Express, supporting user registration, authentication and secure access to video-related APIs",
+        tags:["NodeJS","Express","MongoDB","Cloudinary","Multer"],
+        github:"https://github.com/akhand-24/VidTube-Project",
+      }
+    ] 
+
+    export const education=[
+      {
+        id: 0,
+        img: bitm,
+        school: "Birla Institute of Technology, Mesra",
+        date: "Sept 2023 - Present",
+        grade: "8.3 CGPA",
+        desc: "Pursuing B.Tech in Electronics and Communication Engineering, I have gained a strong foundation in both technical and analytical domains. My time in college has been enriched by hands-on learning, active participation in diverse student-led initiatives, and consistent growth in areas like coding, problem-solving, and collaboration across interdisciplinary environments.",
+        degree: "Bachelors of Technology - BTech",
+      },
+      {
+        id: 1,
+        img: mother,
+        school: "Mother Teresa Mission Higher Secondary School, Kanpur",
+        date: "2013 - 2022",
+        grade: "93% in XII, 93% in X",
+        desc: "Completed 10th and 12th with a strong academic record, developing a disciplined approach to learning and a solid foundation in science and mathematics that fueled my interest in engineering and technology.",
+        degree: "ICSE (Class-X) and ISC (Class-XII)",
+      },
+    ]
